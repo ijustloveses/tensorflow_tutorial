@@ -1,0 +1,21 @@
+jupyter:
+  image: tensorflow-0.9
+  volumes:
+    - "/home/vagrant/workspace/myproj/tensorflow_tutorial/:/notebooks/tensorflow_tutorial/"
+  ports:
+    - "8888:8888"
+  command:
+    - "/run_jupyter.sh"
+    - "/notebooks"
+tensorboard:
+  image: tensorflow-0.9
+  volumes_from:
+    - jupyter
+  ports:
+    - "6006:6006"
+  command:
+    - "tensorboard"
+    - "--logdir"
+    - "/tmp/tensorflow_logs"
+    - "--host"
+    - "0.0.0.0"
