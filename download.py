@@ -18,7 +18,7 @@
 
 import sys
 import os
-import urllib.request
+# import urllib.request
 import tarfile
 import zipfile
 
@@ -76,9 +76,9 @@ def maybe_download_and_extract(url, download_dir):
             os.makedirs(download_dir)
 
         # Download the file from the internet.
-        file_path, _ = urllib.request.urlretrieve(url=url,
-                                                  filename=file_path,
-                                                  reporthook=_print_download_progress)
+        # file_path, _ = urllib.request.urlretrieve(url=url,
+        #                                           filename=file_path,
+        #                                           reporthook=_print_download_progress)
 
         print()
         print("Download finished. Extracting files.")
