@@ -1,6 +1,6 @@
 介绍
 =====
-这个项目其实是[Tensorflow-Tutorial](https://github.com/Hvass-Labs/TensorFlow-Tutorials/)的实践，加入了我个人的理解和注释
+这个项目的前 11 章其实是[Tensorflow-Tutorial](https://github.com/Hvass-Labs/TensorFlow-Tutorials/)的实践，加入了我个人的理解和注释
 
 环境搭建
 =========
